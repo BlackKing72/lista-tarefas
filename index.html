@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    
+    <div class="tasks">
+        <header>
+            <div class="image-icon">
+                <i class="fa-solid fa-list-check fa-2xl"></i>
+            </div>
+            <h1>Lista de tarefas</h1>
+        </header>
+
+        <form class="tasks-form">
+            <input type="text" id="idTaskName" placeholder="Nome da tarefa">
+            <!-- <input type="text" id="idTaskStatus" placeholder="Status"> -->
+            <select id="idTaskStatus">
+                <option value="" selected hidden>Selecione</option>
+                <option value="Pendente">Pendente</option>
+                <option value="Realizando">Realizando</option>
+                <option value="Completado">Completado</option>
+            </select>
+            <input type="date" id="idTaskDate" placeholder="DD/MM/AA">
+            <input class="tasks-submit" type="submit" id="idTaskSubmit" value="Adicionar">
+            <input class="tasks-submit" type="button" id="idTaskCancel" value="Limpar">
+        </form>
+        
+        <div class="tasks-table">
+            <table id="idTasksTable">
+                <tr>
+                    <th>Data</th>
+                    <th>Nome</th>
+                    <th>Status</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+                <tr>
+                    <td>05/05/24</td>
+                    <td>Estudar JavaScript</td>
+                    <td>Pendente</td>
+                    <td><button class="btn-edit tasks-button">
+                        <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                        <p>Editar</p>
+                    </button></td>
+                    <td><button class="btn-delete tasks-button">
+                        <i class="fa-solid fa-trash-can fa-lg"></i>
+                        <p>Excluir</p>
+                    </button></td>
+                </tr>
+                <tr>
+                    <td>05/05/24</td>
+                    <td>Estudar Banco de Dados</td>
+                    <td>Fazendo</td>
+                    <td><button class="btn-edit tasks-button">
+                        <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                        <p>Editar</p>
+                    </button></td>
+                    <td><button class="btn-delete tasks-button">
+                        <i class="fa-solid fa-trash-can fa-lg"></i>
+                        <p>Excluir</p>
+                    </button></td>
+                </tr>
+                <tr>
+                    <td>06/05/24</td>
+                    <td>Almoçar</td>
+                    <td>Completa</td>
+                    <td><button class="btn-edit tasks-button">
+                        <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                        <p>Editar</p>
+                    </button></td>
+                    <td><button class="btn-delete tasks-button">
+                        <i class="fa-solid fa-trash-can fa-lg"></i>
+                        <p>Excluir</p>
+                    </button></td>
+                </tr>
+                <tr>
+                    <td>07/05/24</td>
+                    <td>Dormir</td>
+                    <td>Pendente</td>
+                    <td><button class="btn-edit tasks-button">
+                        <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                        <p>Editar</p>
+                    </button></td>
+                    <td><button class="btn-delete tasks-button">
+                        <i class="fa-solid fa-trash-can fa-lg"></i>
+                        <p>Excluir</p>
+                    </button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
